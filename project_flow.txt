@@ -1,0 +1,11 @@
+1.code a basic ui in app.py and then push to github
+2.now signin to docker hub which is a remote repo (ex: github) and then download docker desktop which is like local one (ex: git).
+3.code the dockerfile and push it to github
+4.use "docker build -t mlops_docker_demo ." to build a docker image
+5.run the container: "docker run -p 5000:5000 mlops_docker_demo"
+6.Tag your image(to keep versions like v1, v2 it shown in tag feild in docker): docker tag mlops_docker_demo usernameofdockerhub/mlops_docker_demo:v1
+7. push image to docker hub: docker push usernameofdockerhub/mlops_docker_demo:v1(use whatever version use want in place of v1)
+8. pull image form dockerhub: docker pull usernameofdockerhub/mlops_docker_demo:v1
+9. run pulled image: docker run -p 5000:5000 usernameofdockerhub/mlops_docker_demo:v1
+
+we can run all these docker commands in any terminal either in vscode or powershell or dockerhub terminal
